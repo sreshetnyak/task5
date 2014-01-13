@@ -7,12 +7,19 @@
 //
 
 #import "TTAppDelegate.h"
+#import "TTViewController.h"
 
 @implementation TTAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    TTViewController *test = [[TTViewController alloc]initWithNibName:@"TTViewController" bundle:nil];
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:test];
+    self.window.rootViewController = nav;
+    nav.navigationBar.hidden = YES;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 							
