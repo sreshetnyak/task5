@@ -7,6 +7,8 @@
 //
 
 #import "TTViewController.h"
+#import "TTHuman.h"
+#import "TTCyclist.h"
 
 @interface TTViewController ()
 
@@ -26,6 +28,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    TTHuman *human = [[TTHuman alloc]initHumanWithName:@"sergey" growth:20 weight:50 gender:@"male"];
+    
+    TTCyclist *cyclist = [[TTCyclist alloc]initHumanWithName:@"aleksander" growth:20 weight:50 gender:@"male"];
+    
+    NSLog(@"%@",human.name);
+    NSLog(@"%@",cyclist.name);
+    [human move];
+    [cyclist move];
     // Do any additional setup after loading the view from its nib.
 }
 
