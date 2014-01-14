@@ -21,10 +21,10 @@
 		A50768B418840147003A16BE /* arrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A50768B318840147003A16BE /* arrayTests.m */; };
 		A5660F081885520900C69369 /* TTHuman.m in Sources */ = {isa = PBXBuildFile; fileRef = A5660F071885520900C69369 /* TTHuman.m */; };
 		A5660F0B1885583400C69369 /* TTCyclist.m in Sources */ = {isa = PBXBuildFile; fileRef = A5660F0A1885583400C69369 /* TTCyclist.m */; };
-		A5660F0E1885585700C69369 /* TTRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = A5660F0D1885585700C69369 /* TTRunner.m */; };
 		A5660F111885587200C69369 /* TTSwimmer.m in Sources */ = {isa = PBXBuildFile; fileRef = A5660F101885587200C69369 /* TTSwimmer.m */; };
-		A5AA6A761884039500EAAF3D /* TTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5AA6A741884039500EAAF3D /* TTViewController.m */; };
-		A5AA6A771884039500EAAF3D /* TTViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5AA6A751884039500EAAF3D /* TTViewController.xib */; };
+		A5D483C218855F8A00F94D77 /* TTRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D483BF18855F8A00F94D77 /* TTRunner.m */; };
+		A5D483C318855F8A00F94D77 /* TTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D483C018855F8A00F94D77 /* TTViewController.m */; };
+		A5D483C418855F8A00F94D77 /* TTViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5D483C118855F8A00F94D77 /* TTViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,13 +58,13 @@
 		A5660F071885520900C69369 /* TTHuman.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTHuman.m; sourceTree = "<group>"; };
 		A5660F091885583400C69369 /* TTCyclist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTCyclist.h; sourceTree = "<group>"; };
 		A5660F0A1885583400C69369 /* TTCyclist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTCyclist.m; sourceTree = "<group>"; };
-		A5660F0C1885585700C69369 /* TTRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTRunner.h; path = ../TTRunner.h; sourceTree = "<group>"; };
-		A5660F0D1885585700C69369 /* TTRunner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTRunner.m; path = ../TTRunner.m; sourceTree = "<group>"; };
 		A5660F0F1885587200C69369 /* TTSwimmer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTSwimmer.h; sourceTree = "<group>"; };
 		A5660F101885587200C69369 /* TTSwimmer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTSwimmer.m; sourceTree = "<group>"; };
-		A5AA6A731884039500EAAF3D /* TTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTViewController.h; path = ../TTViewController.h; sourceTree = "<group>"; };
-		A5AA6A741884039500EAAF3D /* TTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTViewController.m; path = ../TTViewController.m; sourceTree = "<group>"; };
-		A5AA6A751884039500EAAF3D /* TTViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TTViewController.xib; path = ../TTViewController.xib; sourceTree = "<group>"; };
+		A5D483BD18855F6A00F94D77 /* TTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTViewController.h; sourceTree = "<group>"; };
+		A5D483BE18855F8A00F94D77 /* TTRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTRunner.h; sourceTree = "<group>"; };
+		A5D483BF18855F8A00F94D77 /* TTRunner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTRunner.m; sourceTree = "<group>"; };
+		A5D483C018855F8A00F94D77 /* TTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTViewController.m; sourceTree = "<group>"; };
+		A5D483C118855F8A00F94D77 /* TTViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TTViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,15 +126,15 @@
 			children = (
 				A507689718840147003A16BE /* TTAppDelegate.h */,
 				A507689818840147003A16BE /* TTAppDelegate.m */,
-				A5AA6A731884039500EAAF3D /* TTViewController.h */,
-				A5AA6A741884039500EAAF3D /* TTViewController.m */,
-				A5AA6A751884039500EAAF3D /* TTViewController.xib */,
+				A5D483BD18855F6A00F94D77 /* TTViewController.h */,
+				A5D483BE18855F8A00F94D77 /* TTRunner.h */,
+				A5D483BF18855F8A00F94D77 /* TTRunner.m */,
+				A5D483C018855F8A00F94D77 /* TTViewController.m */,
+				A5D483C118855F8A00F94D77 /* TTViewController.xib */,
 				A5660F061885520900C69369 /* TTHuman.h */,
 				A5660F071885520900C69369 /* TTHuman.m */,
 				A5660F091885583400C69369 /* TTCyclist.h */,
 				A5660F0A1885583400C69369 /* TTCyclist.m */,
-				A5660F0C1885585700C69369 /* TTRunner.h */,
-				A5660F0D1885585700C69369 /* TTRunner.m */,
 				A5660F0F1885587200C69369 /* TTSwimmer.h */,
 				A5660F101885587200C69369 /* TTSwimmer.m */,
 				A50768A018840147003A16BE /* Images.xcassets */,
@@ -251,7 +251,7 @@
 			files = (
 				A50768A118840147003A16BE /* Images.xcassets in Resources */,
 				A507689318840147003A16BE /* InfoPlist.strings in Resources */,
-				A5AA6A771884039500EAAF3D /* TTViewController.xib in Resources */,
+				A5D483C418855F8A00F94D77 /* TTViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,13 +270,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5D483C318855F8A00F94D77 /* TTViewController.m in Sources */,
 				A507689918840147003A16BE /* TTAppDelegate.m in Sources */,
 				A5660F081885520900C69369 /* TTHuman.m in Sources */,
 				A507689518840147003A16BE /* main.m in Sources */,
 				A5660F0B1885583400C69369 /* TTCyclist.m in Sources */,
-				A5AA6A761884039500EAAF3D /* TTViewController.m in Sources */,
 				A5660F111885587200C69369 /* TTSwimmer.m in Sources */,
-				A5660F0E1885585700C69369 /* TTRunner.m in Sources */,
+				A5D483C218855F8A00F94D77 /* TTRunner.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
