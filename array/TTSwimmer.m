@@ -10,4 +10,8 @@
 
 @implementation TTSwimmer
 
+- (void)move {
+    NSLog(@"%@ is swimmer",self.name);
+}
+
 @end

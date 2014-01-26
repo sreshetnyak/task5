@@ -10,4 +10,8 @@
 
 @implementation TTRunner
 
+- (void)move {
+    NSLog(@"%@ is runner",self.name);
+}
+
 @end

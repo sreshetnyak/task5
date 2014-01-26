@@ -12,7 +12,7 @@
 
 - (void)move {
     
-    NSLog(@"move humman %@",_name);
+    NSLog(@"%@ is humman",_name);
 }
 
 - (id)initHumanWithName:(NSString *)name growth:(NSInteger)growth weight:(NSInteger)weight gender:(NSString *)gender {

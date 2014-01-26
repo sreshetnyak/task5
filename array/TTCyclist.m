@@ -11,7 +11,7 @@
 @implementation TTCyclist
 
 - (void)move {
-    NSLog(@"i am cyclist");
+    NSLog(@"%@ is cyclist",self.name);
 }
 
 @end

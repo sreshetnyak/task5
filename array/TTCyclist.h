@@ -10,6 +10,4 @@
 
 @interface TTCyclist : TTHuman
 
-- (void)move;
-
 @end

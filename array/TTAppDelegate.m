@@ -13,13 +13,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    TTViewController *test = [[TTViewController alloc]initWithNibName:@"TTViewController" bundle:nil];
-    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:test];
-    self.window.rootViewController = nav;
-    nav.navigationBar.hidden = YES;
+    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+    self.viewController = [[[TTViewController alloc] initWithNibName:@"TTViewController" bundle:nil] autorelease];
+    UINavigationController *navcon = [[UINavigationController alloc] init];
+    [navcon pushViewController:self.viewController animated:YES];
+    self.window.rootViewController = navcon;
+    navcon.navigationBar.hidden = YES;
     [self.window makeKeyAndVisible];
+	[navcon release];
+    return YES;
+    
     return YES;
 }
 							
