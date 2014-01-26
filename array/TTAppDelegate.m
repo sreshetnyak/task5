@@ -22,8 +22,6 @@
     [self.window makeKeyAndVisible];
 	[navcon release];
     return YES;
-    
-    return YES;
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application
