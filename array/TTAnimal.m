@@ -11,7 +11,7 @@
 @implementation TTAnimal
 
 
--(id)initWithNickname:(NSString *)nickname feetCount:(NSInteger)feetCount {
+- (id)initWithNickname:(NSString *)nickname feetCount:(NSInteger)feetCount {
 
     if (self = [super init]) {
         _nickname = nickname;
@@ -21,7 +21,7 @@
     return self;
 }
 
--(void)move {
+- (void)move {
 
     NSLog(@"move animal");
 }

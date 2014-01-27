@@ -36,8 +36,15 @@
     TTDog *dog = [[[TTDog alloc]initWithNickname:@"Aiki" feetCount:4]autorelease];
     
     
-    NSArray *objArray = [NSArray arrayWithObjects:human,cyclist,swimmer,runer1,runer2,student,kote,dog, nil];
+    NSArray *objArray = [[[NSArray alloc]initWithObjects:human,cyclist,swimmer,runer1,runer2,student,kote,dog, nil]autorelease];
     
+    NSArray *hummanArray = [[[NSArray alloc]initWithObjects:human,cyclist,swimmer,runer1,runer2,student, nil]autorelease];
+    NSArray *animalArray = [[[NSArray alloc]initWithObjects:kote,dog, nil]autorelease];
+    
+//    NSArray *objArray = [NSArray arrayWithObjects:human,cyclist,swimmer,runer1,runer2,student,kote,dog, nil];
+//    
+//    NSArray *hummanArray = [NSArray arrayWithObjects:human,cyclist,swimmer,runer1,runer2,student, nil];
+//    NSArray *animalArray = [NSArray arrayWithObjects:kote,dog, nil];
     
     //4. В цикле пройти по всем элементам массива и вывести на экран все характеристики каждого объекта (имя, рост и тд) и у каждого вызвать метод "передвижение".
     //11. В цикле выводить тип объекта (человек или животное) перед тем как выводить его свойства и вызывать метод
@@ -143,9 +150,8 @@
     
     NSLog(@"__________________________________________");
     
-    NSArray *hummanArray = [NSArray arrayWithObjects:human,cyclist,swimmer,runer1,runer2,student, nil];
     
-    NSArray *animalArray = [NSArray arrayWithObjects:kote,dog, nil];
+    
     
     for (int i = 0; i < [hummanArray count] + [animalArray count]; i++) {
         

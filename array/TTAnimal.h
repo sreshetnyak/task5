@@ -13,7 +13,7 @@
 @property (nonatomic,strong) NSString *nickname;
 @property (nonatomic,assign) NSInteger feetCount;
 
--(id)initWithNickname:(NSString *)nickname feetCount:(NSInteger)feetCount;
--(void)move;
+- (id)initWithNickname:(NSString *)nickname feetCount:(NSInteger)feetCount;
+- (void)move;
 
 @end
