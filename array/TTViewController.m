@@ -26,14 +26,14 @@
 {
     [super viewDidLoad];
     
-    TTHuman *human = [[TTHuman alloc]initHumanWithName:@"Sergey" growth:20 weight:50 gender:@"male"];
-    TTCyclist *cyclist = [[TTCyclist alloc]initHumanWithName:@"Arthur" growth:20 weight:50 gender:@"male"];
-    TTRunner *runer1 = [[TTRunner alloc]initHumanWithName:@"Aleksander" growth:20 weight:50 gender:@"male"];
-    TTRunner *runer2 = [[TTRunner alloc]initHumanWithName:@"Viktor" growth:20 weight:50 gender:@"male"];
-    TTSwimmer *swimmer = [[TTSwimmer alloc]initHumanWithName:@"Anna" growth:20 weight:50 gender:@"female"];
-    TTStudent *student = [[TTStudent alloc]initHumanWithName:@"George" growth:20 weight:50 gender:@"male" curses:5];
-    TTKote *kote = [[TTKote alloc]initWithNickname:@"murchik" feetCount:4];
-    TTDog *dog = [[TTDog alloc]initWithNickname:@"Aiki" feetCount:4];
+    TTHuman *human = [[[TTHuman alloc]initHumanWithName:@"Sergey" growth:20 weight:50 gender:@"male"]autorelease];
+    TTCyclist *cyclist = [[[TTCyclist alloc]initHumanWithName:@"Arthur" growth:20 weight:50 gender:@"male"]autorelease];
+    TTRunner *runer1 = [[[TTRunner alloc]initHumanWithName:@"Aleksander" growth:20 weight:50 gender:@"male"]autorelease];
+    TTRunner *runer2 = [[[TTRunner alloc]initHumanWithName:@"Viktor" growth:20 weight:50 gender:@"male"]autorelease];
+    TTSwimmer *swimmer = [[[TTSwimmer alloc]initHumanWithName:@"Anna" growth:20 weight:50 gender:@"female"]autorelease];
+    TTStudent *student = [[[TTStudent alloc]initHumanWithName:@"George" growth:20 weight:50 gender:@"male" curses:5]autorelease];
+    TTKote *kote = [[[TTKote alloc]initWithNickname:@"murchik" feetCount:4]autorelease];
+    TTDog *dog = [[[TTDog alloc]initWithNickname:@"Aiki" feetCount:4]autorelease];
     
     
     NSArray *objArray = [NSArray arrayWithObjects:human,cyclist,swimmer,runer1,runer2,student,kote,dog, nil];
@@ -66,9 +66,7 @@
             [obj move];
         
         }
-        
-        
-    
+
     }
     
     
@@ -143,6 +141,7 @@
 //    12. Поместить всех людей в один массив, а животных в другой массив (количество людей и животных должно быть разное)
 //    13. В одном цикле выводить сначала человека а потом животное, доставая данные поочередно из двух разных массивов, если в одном из массивов объектов больше, то в конце должны выводиться только объекты этого массива (так как других уже нет)
     
+    NSLog(@"__________________________________________");
     
     NSArray *hummanArray = [NSArray arrayWithObjects:human,cyclist,swimmer,runer1,runer2,student, nil];
     
@@ -189,6 +188,7 @@
     }];
     
     NSLog(@"sorted array");
+    NSLog(@"__________________________________________");
     
     for (id obj in sortedObj) {
     
@@ -200,14 +200,14 @@
     }
     
     
-    [human release];
-    [cyclist release];
-    [swimmer release];
-    [runer2 release];
-    [runer1 release];
-    [student release];
-    [kote release];
-    [dog release];
+//    [human release];
+//    [cyclist release];
+//    [swimmer release];
+//    [runer2 release];
+//    [runer1 release];
+//    [student release];
+//    [kote release];
+//    [dog release];
     
     // Do any additional setup after loading the view from its nib.
 }
